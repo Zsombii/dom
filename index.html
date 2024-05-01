@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM model</title>
+    <script>
+        function kiir() 
+        {
+            var a = document.getElementById("szoveg");
+            a.innerHTML = "Teszt szöveg";
+        }
+    </script>
+</head>
+<body>
+    <form name="dom">
+        <input type="button" value="gomb" name="megjelenik" onclick="kiir()">
+    </form>
+
+    <p id="szoveg"></p>
+</body>
+</html>
